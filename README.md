@@ -5,17 +5,5 @@ Frontend-разработчик, стажер. Увлечен созданием
 
 ### 🛠 Стек технологий:
 - **Frontend:** React, Next.js, Tailwind CSS, JavaScript (ES6+)
-- **Backend:** Firebase, PostgreSQL (изучаю Django)
+- **Backend:** Firebase, Supabase,
 - **Инструменты:** Git, VS Code, Linux (Fedora)
-
-### 🚀 Мои проекты:
-*Здесь будут ссылки на твои закрепленные репозитории:*
-- [Название твоего чат-мессенджера] — *Краткое описание (напр. Real-time чат на Next.js + Firebase)*
-
-### 📈 Статистика:
-*(Когда оформишь проекты, добавь сюда GitHub Stats)*
-
----
-📫 **Как связаться со мной:**
-- Telegram: [Твой_ник]
-- Почта: [Твой_email]
