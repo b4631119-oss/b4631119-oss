@@ -1,7 +1,7 @@
 <div align="center">
 
   <h1>Привет, я Билол! 👋</h1>
-  <p><i>Frontend Developer | Intern</i></p>
+  <p><i>Frontend Developer </i></p>
 
   <br>
 
@@ -39,7 +39,7 @@
 
   <br>
 
-  <div align="left">
+  <div align="center">
     <h3>🚀 Обо мне</h3>
     <p>Начинающий разработчик, специализирующийся на создании современных веб-приложений.</p>
   </div>
