@@ -1,5 +1,5 @@
 <div align="center">
-[![Generate Snake](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml)
+
   <h1>Привет, я Билол! 👋</h1>
   <p><i>Frontend Developer </i></p>
 
