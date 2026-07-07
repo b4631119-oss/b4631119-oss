@@ -58,14 +58,35 @@
 
   <br>
   <br>
-
-  <h3>💬 Как твоё настроение сегодня? Нажми, чтобы проголосовать:</h3>
-  <p>
-    <a href="https://github.com/b4631119-oss/b4631119-oss/issues/new?title=Vote+Excellent&body=I+voted+Excellent!"><img src="https://img.shields.io/badge/Отлично-🔥-green?style=for-the-badge" /></a>
-    <a href="https://github.com/b4631119-oss/b4631119-oss/issues/new?title=Vote+Good&body=I+voted+Good!"><img src="https://img.shields.io/badge/Нормально-😎-blue?style=for-the-badge" /></a>
-    <a href="https://github.com/b4631119-oss/b4631119-oss/issues/new?title=Vote+Coding&body=I+voted+Coding!"><img src="https://img.shields.io/badge/Пишу+код-💻-purple?style=for-the-badge" /></a>
+<h3>🏆 Мои цифровые трофеи</h3>
+  <p align="center">
+    <img src="https://github-profile-trophy.vercel.app/?username=b4631119-oss&theme=onedark&column=3&margin-w=15&margin-h=15&no-bg=true&no-frame=true" alt="GitHub Trophies" />
   </p>
 
+  <br>
+
+  <table align="center" style="border-collapse: collapse; border: none;">
+    <tr>
+      <td align="center" style="border: none;">
+        <h3>💬 Как твоё настроение сегодня? Нажми на кнопку, чтобы проголосовать:</h3>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="border: none; padding-top: 10px;">
+        <a href="https://github.com/b4631119-oss/b4631119-oss/issues/new?title=Vote+Excellent&body=I+voted+Excellent!+🚀">
+          <img src="https://img.shields.io/badge/ЗАЯЖЕН_НА_КОД-🔥_Отлично-success?style=for-the-badge&logo=rocket&logoColor=white&color=2ea44f" alt="Excellent" />
+        </a>
+        &nbsp;
+        <a href="https://github.com/b4631119-oss/b4631119-oss/issues/new?title=Vote+Good&body=I+voted+Good!+😎">
+          <img src="https://img.shields.io/badge/ВСЕ_ТИП_ТОП-😎_Нормально-informational?style=for-the-badge&logo=codeforces&logoColor=white&color=0052cc" alt="Good" />
+        </a>
+        &nbsp;
+        <a href="https://github.com/b4631119-oss/b4631119-oss/issues/new?title=Vote+Coding&body=I+voted+Coding!+💻">
+          <img src="https://img.shields.io/badge/В_ПОТОКЕ_РЕФАКТОРА-💻_Пишу_код-purple?style=for-the-badge&logo=visual-studio-code&logoColor=white&color=7928ca" alt="Coding" />
+        </a>
+      </td>
+    </tr>
+  </table>
   <br>
 
 
