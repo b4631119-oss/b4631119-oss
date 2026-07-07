@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Привет,%20я%20Билол!%20👋&fontSize=45&animation=twinkling" />  <p><i>Frontend Developer </i></p>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Привет,%20я%20Билол!%20👋&fontSize=45&animation=twinkling" />  
+  
+  <p><i>Frontend Developer </i></p>
 
   [![Generate Snake](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml)
 
@@ -51,11 +53,29 @@
   <br>
   <br>
 
+  <h3>📊 Моя 3D Карта Коммитов</h3>
+  <img src="profile-3d-contrib/profile-green-animate.svg" alt="3D карту коммитов" width="650"/>
+
+  <br>
+  <br>
+
+  <h3>💬 Как твоё настроение сегодня? Нажми, чтобы проголосовать:</h3>
+  <p>
+    <a href="https://github.com/b4631119-oss/b4631119-oss/issues/new?title=Vote+Excellent&body=I+voted+Excellent!"><img src="https://img.shields.io/badge/Отлично-🔥-green?style=for-the-badge" /></a>
+    <a href="https://github.com/b4631119-oss/b4631119-oss/issues/new?title=Vote+Good&body=I+voted+Good!"><img src="https://img.shields.io/badge/Нормально-😎-blue?style=for-the-badge" /></a>
+    <a href="https://github.com/b4631119-oss/b4631119-oss/issues/new?title=Vote+Coding&body=I+voted+Coding!"><img src="https://img.shields.io/badge/Пишу+код-💻-purple?style=for-the-badge" /></a>
+  </p>
+
+  <br>
+
   <div>
     <h3>🚀 Обо мне</h3>
     <p>Начинающий разработчик, специализирующийся на создании современных веб-приложений.</p>
   </div>
 
+  <br>
 
+  <h3>📫 Связь со мной</h3>
+  <p><a href="mailto:bilolmen998@gmail.com">Email</a></p>
 
 </div>
