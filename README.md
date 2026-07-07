@@ -54,54 +54,11 @@
   <br>
 
   <h3>📊 Моя 3D Карта Коммитов</h3>
+  [![GitHub-Profile-3D-Contrib](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/profile-3d.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/profile-3d.yml)
+  
+  <br><br>
   <img src="profile-3d-contrib/profile-green-animate.svg" alt="3D карту коммитов" width="650"/>
-
+  
   <br>
-  <br>
-<!-- БЛОК С ТРОФЕЯМИ И ДОСТИЖЕНИЯМИ (Исправленный синтаксис) -->
-  <h3>🏆 Мои цифровые трофеи</h3>
-  <p align="center">
-    <a href="https://github.com/ryo-ma/github-profile-trophy">
-      <img src="https://github-profile-trophy.vercel.app/?username=b4631119-oss&theme=onedark&column=3&margin-w=15&margin-h=15&no-bg=true&no-frame=true" alt="b4631119-oss Trophies" />
-    </a>
-  </p>
-
-  <br>
-
-  <!-- ДИНАМИЧЕСКАЯ СТАТИСТИКА КОДА -->
-  <h3>📈 Аналитика профиля</h3>
-  <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=b4631119-oss&show_icons=true&theme=onedark&hide_border=true&count_private=true" alt="b4631119-oss GitHub Stats" height="180" />
-    &nbsp;&nbsp;
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=b4631119-oss&layout=compact&theme=onedark&hide_border=true&langs_count=6" alt="Top Langs" height="180" />
-  </p>
-
-  <br>
-
-  <!-- СТИЛИЗОВАННЫЙ ИНТЕРАКТИВНЫЙ БЛОК ГОЛОСОВАНИЯ -->
-  <table align="center" style="border-collapse: collapse; border: none;">
-    <tr>
-      <td align="center" style="border: none;">
-        <h3>💬 Как твоё настроение сегодня? Нажми на кнопку, чтобы проголосовать:</h3>
-      </td>
-    </tr>
-    <tr>
-      <td align="center" style="border: none; padding-top: 10px;">
-        <a href="https://github.com/b4631119-oss/b4631119-oss/issues/new?title=Vote+Excellent&body=I+voted+Excellent!+🚀">
-          <img src="https://img.shields.io/badge/ЗАЯЖЕН_НА_КОД-🔥_Отлично-success?style=for-the-badge&logo=rocket&logoColor=white&color=2ea44f" alt="Excellent" />
-        </a>
-        &nbsp;
-        <a href="https://github.com/b4631119-oss/b4631119-oss/issues/new?title=Vote+Good&body=I+voted+Good!+😎">
-          <img src="https://img.shields.io/badge/ВСЕ_ТИП_ТОП-😎_Нормально-informational?style=for-the-badge&logo=codeforces&logoColor=white&color=0052cc" alt="Good" />
-        </a>
-        &nbsp;
-        <a href="https://github.com/b4631119-oss/b4631119-oss/issues/new?title=Vote+Coding&body=I+voted+Coding!+💻">
-          <img src="https://img.shields.io/badge/В_ПОТОКЕ_РЕФАКТОРА-💻_Пишу_код-purple?style=for-the-badge&logo=visual-studio-code&logoColor=white&color=7928ca" alt="Coding" />
-        </a>
-      </td>
-    </tr>
-  </table>
-  <br>
-
 
 </div>
