@@ -53,9 +53,7 @@
   <br>
   <br>
 
-  <h3>📊 Моя 3D Карта Коммитов</h3>
-  [![GitHub-Profile-3D-Contrib](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/profile-3d.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/profile-3d.yml)
-  
+ 
   <br><br>
   <img src="profile-3d-contrib/profile-green-animate.svg" alt="3D карту коммитов" width="650"/>
   
