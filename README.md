@@ -58,13 +58,27 @@
 
   <br>
   <br>
-<h3>🏆 Мои цифровые трофеи</h3>
+<!-- БЛОК С ТРОФЕЯМИ И ДОСТИЖЕНИЯМИ (Исправленный синтаксис) -->
+  <h3>🏆 Мои цифровые трофеи</h3>
   <p align="center">
-    <img src="https://github-profile-trophy.vercel.app/?username=b4631119-oss&theme=onedark&column=3&margin-w=15&margin-h=15&no-bg=true&no-frame=true" alt="GitHub Trophies" />
+    <a href="https://github.com/ryo-ma/github-profile-trophy">
+      <img src="https://github-profile-trophy.vercel.app/?username=b4631119-oss&theme=onedark&column=3&margin-w=15&margin-h=15&no-bg=true&no-frame=true" alt="b4631119-oss Trophies" />
+    </a>
   </p>
 
   <br>
 
+  <!-- ДИНАМИЧЕСКАЯ СТАТИСТИКА КОДА -->
+  <h3>📈 Аналитика профиля</h3>
+  <p align="center">
+    <img src="https://github-readme-stats.vercel.app/api?username=b4631119-oss&show_icons=true&theme=onedark&hide_border=true&count_private=true" alt="b4631119-oss GitHub Stats" height="180" />
+    &nbsp;&nbsp;
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=b4631119-oss&layout=compact&theme=onedark&hide_border=true&langs_count=6" alt="Top Langs" height="180" />
+  </p>
+
+  <br>
+
+  <!-- СТИЛИЗОВАННЫЙ ИНТЕРАКТИВНЫЙ БЛОК ГОЛОСОВАНИЯ -->
   <table align="center" style="border-collapse: collapse; border: none;">
     <tr>
       <td align="center" style="border: none;">
