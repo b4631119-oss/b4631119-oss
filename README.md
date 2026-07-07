@@ -3,6 +3,9 @@
   <h1>Привет, я Билол! 👋</h1>
   <p><i>Frontend Developer </i></p>
 
+  [![Generate Snake](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml)
+
+  <br>
   <br>
 
   <h3>🛠 Технологический стек</h3>
@@ -39,3 +42,22 @@
   </table>
 
   <br>
+
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/output/github-contribution-grid-snake.svg">
+    <img alt="GitHub Contributions Snake Animation" src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/output/github-contribution-grid-snake.svg">
+  </picture>
+
+  <br>
+  <br>
+
+  <div>
+    <h3>🚀 Обо мне</h3>
+    <p>Начинающий разработчик, специализирующийся на создании современных веб-приложений.</p>
+  </div>
+
+  <h3>📫 Связь со мной</h3>
+  <p><a href="mailto:bilolmen998@gmail.com">Email</a></p>
+
+</div>
