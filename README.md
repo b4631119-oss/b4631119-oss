@@ -39,4 +39,3 @@
   </table>
 
   <br>
-Snake animation
