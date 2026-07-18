@@ -2,7 +2,7 @@
 
   <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Привет,%20я%20Билол!%20👋&fontSize=45&animation=twinkling" />  
   
-  <p><i>Frontend Developer </i></p>
+  <p><i>Fullstack Developer </i></p>
 
   [![Generate Snake](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml)
 
@@ -27,10 +27,12 @@
     <tr>
       <td align="center"><b>Backend</b></td>
       <td>
-       ![Firebase](https://shields.io)
-![Supabase](https://shields.io)
-![Python](https://shields.io)
-![Django](https://shields.io)
+        <img src="https://shields.io" />
+        <img src="https://shields.io" />
+        <img src="https://shields.io" />
+        <img src="https://shields.io" />
+        <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
+        <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
       </td>
     </tr>
     <tr>
