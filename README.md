@@ -27,8 +27,10 @@
     <tr>
       <td align="center"><b>Backend</b></td>
       <td>
-        <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
-        <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
+       ![Firebase](https://shields.io)
+![Supabase](https://shields.io)
+![Python](https://shields.io)
+![Django](https://shields.io)
       </td>
     </tr>
     <tr>
