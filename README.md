@@ -2,7 +2,7 @@
 
   <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Привет,%20я%20Билол!%20👋&fontSize=45&animation=twinkling" />  
   
-  <p><i>Fullstack Developer </i></p>
+  <p><i>Frontend Developer </i></p>
 
   [![Generate Snake](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml)
 
