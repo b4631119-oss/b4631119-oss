@@ -4,7 +4,7 @@
   
   <p><i>Frontend Developer </i></p>
 
-  [![Generate Snake](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml)
+[![Generate Pac-Man](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-pacman.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-pacman.yml)
 
   <br>
   <br>
