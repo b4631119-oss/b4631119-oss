@@ -54,7 +54,6 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/output/github-contribution-grid-pacman.svg">
   <img alt="GitHub Contributions Pac-Man Animation" src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/output/github-contribution-grid-pacman.svg">
 </picture>
-
   <br>
   <br>
 
