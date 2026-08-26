@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [README.md, .github/workflows/generate-trophy.yml]
+    paths: [README.md, .github/workflows/generate-trophy.yml, .github/scripts/generate-trophy.js]
 
 jobs:
   trophy:
@@ -18,12 +18,12 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          npm i -g github-profile-trophy
-          mkdir -p dist
-          github-profile-trophy --username=b4631119-oss --theme=dracula --column=-1 --row=1 --margin-w=8 --margin-h=8 --no-bg --no-frame -o dist/trophy.svg || echo '<svg><text>trophy unavailable</text></svg>' > dist/trophy.svg
-          cp dist/trophy.svg dist/github-contribution-trophy.svg
-          ls -lh dist/
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci || npm i node-fetch@2
+      - run: node .github/scripts/generate-trophy.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: crazy-max/ghaction-github-pages@v3.1.0

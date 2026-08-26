@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [README.md, .github/workflows/generate-activity-graph.yml]
+    paths: [README.md, .github/workflows/generate-activity-graph.yml, .github/scripts/generate-activity.js]
 
 jobs:
   graph:
@@ -18,11 +18,12 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          npm i -g github-readme-activity-graph
-          mkdir -p dist
-          github-readme-activity-graph --username=b4631119-oss --theme=modern-lilac --radius=16 --area -o dist/activity-graph.svg || echo '<svg><text>activity unavailable</text></svg>' > dist/activity-graph.svg
-          ls -lh dist/
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci || npm i node-fetch@2
+      - run: node .github/scripts/generate-activity.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: crazy-max/ghaction-github-pages@v3.1.0

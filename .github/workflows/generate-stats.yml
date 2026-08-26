@@ -18,12 +18,14 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
       - run: |
-          npm i -g github-readme-stats
-          mkdir -p dist-stats dist-langs
-          github-readme-stats --username=b4631119-oss --theme=dracula --hide_title --hide_rank --show_icons --include_all_commits --count_private --disable_animations --hide_border --locale=en -o dist-stats/stats.svg || echo '<svg><text>stats unavailable</text></svg>' > dist-stats/stats.svg
-          github-readme-stats --username=b4631119-oss --theme=dracula --top_langs --layout=compact --card_width=320 --langs_count=5 --hide_border --locale=en -o dist-langs/languages.svg || echo '<svg><text>langs unavailable</text></svg>' > dist-langs/languages.svg
-          ls -lh dist-stats/ dist-langs/
+          npm ci || npm i node-fetch@2
+      - run: |
+          node .github/scripts/generate-stats.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: crazy-max/ghaction-github-pages@v3.1.0
