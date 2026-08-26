@@ -1,0 +1,40 @@
+name: Generate Stats
+
+# Генерирует stats.svg и languages.svg для веток stats-output / languages-output
+# Использует https://github.com/anuraghazra/github-readme-stats и peterthehan/github-stats
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  stats:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate stats.svg
+        run: |
+          mkdir -p dist-stats dist-langs
+          # stats (аналог github-stats.svg / stats.svg)
+          curl -s "https://github-readme-stats.vercel.app/api?username=b4631119-oss&hide_title=true&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" -o dist-stats/stats.svg
+          # top langs
+          curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=b4631119-oss&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" -o dist-langs/languages.svg
+      - name: push stats to stats-output
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: stats-output
+          build_dir: dist-stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: push langs to languages-output
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: languages-output
+          build_dir: dist-langs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
