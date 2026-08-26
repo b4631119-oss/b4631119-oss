@@ -42,13 +42,13 @@ jobs:
           github_user_name: b4631119-oss
           outputs: |
             dist/bomberman-contribution-graph.svg?game=bomberman
-            dist/bomberman-contribution-graph-dark.svg?palette=github-dark&game=bomberman
+            dist/bomberman-contribution-graph-dark.svg?game=bomberman&palette=github-dark
             dist/breakout-contribution-graph.svg?game=breakout
-            dist/breakout-contribution-graph-dark.svg?palette=github-dark&game=breakout
+            dist/breakout-contribution-graph-dark.svg?game=breakout&palette=github-dark
             dist/puzzle-bobble-contribution-graph.svg?game=puzzle-bobble
-            dist/puzzle-bobble-contribution-graph-dark.svg?palette=github-dark&game=puzzle-bobble
+            dist/puzzle-bobble-contribution-graph-dark.svg?game=puzzle-bobble&palette=github-dark
             dist/galaga-contribution-graph.svg?game=galaga
-            dist/galaga-contribution-graph-dark.svg?palette=github-dark&game=galaga
+            dist/galaga-contribution-graph-dark.svg?game=galaga&palette=github-dark
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: pacman-output
