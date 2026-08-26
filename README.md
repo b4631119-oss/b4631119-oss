@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Привет,%20я%20Билол!%20👋&fontSize=45&animation=twinkling" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%2C%20%D1%8F%20%D0%91%D0%B8%D0%BB%D0%BE%D0%BB%21%20%F0%9F%91%8B&fontSize=45&animation=twinkling" />
   <p><i>Frontend Developer</i></p>
 </div>
 
