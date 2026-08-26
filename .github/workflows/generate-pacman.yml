@@ -25,6 +25,7 @@ jobs:
           outputs: |
             dist/github-contribution-grid-pacman.svg
             dist/github-contribution-grid-pacman-dark.svg?palette=github-dark
+          pacman: true
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
