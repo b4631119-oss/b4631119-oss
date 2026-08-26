@@ -92,19 +92,28 @@
 
 [![Generate Pac-Man](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-pacman.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-pacman.yml)
 [![Generate Games](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-games.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-games.yml)
-[![Generate 3D Contrib](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/profile-3d.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/profile-3d.yml)
-[![Generate Stats](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-stats.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-stats.yml)
 [![Generate Snake](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml)
+[![Generate 3D](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/profile-3d.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/profile-3d.yml)
+[![Generate Stats](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-stats.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-stats.yml)
 [![Generate Trophy](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-trophy.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-trophy.yml)
-[![Generate Activity Graph](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-activity-graph.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-activity-graph.yml)
+[![Generate Activity](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-activity-graph.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-activity-graph.yml)
 
 <br><br>
+
+<!-- Змейка — ветка snake-output (совместимость snake.svg + github-snake.svg) -->
+<picture data-importer="snake">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/snake-output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/snake-output/github-snake.svg">
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/snake-output/github-snake.svg">
+</picture>
+
+<br>
 
 <!-- Основной Pac-Man — ветка output -->
 <picture data-importer="pacman">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/output/github-contribution-grid-pacman-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/output/github-contribution-grid-pacman.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/output/github-contribution-grid-pacman.svg">
+  <img alt="GitHub Contributions Pac-Man" src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/output/github-contribution-grid-pacman.svg">
 </picture>
 
 <br><br>
@@ -112,38 +121,29 @@
 
 <br><br>
 
-<!-- Игры — ветка pacman-output с параметром ?game= -->
+<!-- Игры — ветка pacman-output -->
 <picture data-importer="pacman">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/bomberman-contribution-graph-dark.svg?game=bomberman">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/bomberman-contribution-graph.svg?game=bomberman">
-  <img alt="bomberman contribution graph" src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/bomberman-contribution-graph.svg?game=bomberman">
+  <img alt="Bomberman" src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/bomberman-contribution-graph.svg?game=bomberman">
 </picture>
 
 <picture data-importer="pacman">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/breakout-contribution-graph-dark.svg?game=breakout">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/breakout-contribution-graph.svg?game=breakout">
-  <img alt="breakout contribution graph" src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/breakout-contribution-graph.svg?game=breakout">
+  <img alt="Breakout" src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/breakout-contribution-graph.svg?game=breakout">
 </picture>
 
 <picture data-importer="pacman">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/puzzle-bobble-contribution-graph-dark.svg?game=puzzle-bobble">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/puzzle-bobble-contribution-graph.svg?game=puzzle-bobble">
-  <img alt="puzzle-bobble contribution graph" src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/puzzle-bobble-contribution-graph.svg?game=puzzle-bobble">
+  <img alt="Puzzle Bobble" src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/puzzle-bobble-contribution-graph.svg?game=puzzle-bobble">
 </picture>
 
 <picture data-importer="pacman">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/galaga-contribution-graph-dark.svg?game=galaga">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/galaga-contribution-graph.svg?game=galaga">
-  <img alt="galaga contribution graph" src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/galaga-contribution-graph.svg?game=galaga">
-</picture>
-
-<br>
-
-<!-- Змейка — ветка snake-output -->
-<picture data-importer="snake">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/snake-output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/snake-output/github-snake.svg">
-  <img alt="snake contribution graph" src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/snake-output/github-snake.svg">
+  <img alt="Galaga" src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/pacman-output/galaga-contribution-graph.svg?game=galaga">
 </picture>
 
 <br>
@@ -155,7 +155,7 @@
 
 <br>
 
-<!-- Статистика — без изменений, ваши текущие ветки -->
+<!-- Статистика — без изменений -->
 <div data-importer="stats" align="center">
   <img src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/stats-output/stats.svg?hide_title=true&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
   <img src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/languages-output/languages.svg?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
