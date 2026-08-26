@@ -1,12 +1,17 @@
 name: Generate Profile (All)
 
+concurrency:
+  group: gh-pages-${{ github.ref }}
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: "0 6 * * *"
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: [README.md, .github/workflows/generate-profile.yml]
+  # push: disabled to avoid race
+  #   branches: [main]
+  # branches: [main]
+  # paths: [README.md, .github/workflows/generate-profile.yml]
 
 jobs:
   pacman:
@@ -32,18 +37,16 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      - uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: b4631119-oss
-          outputs: |
-            dist/bomberman-contribution-graph.svg?game=bomberman
-            dist/bomberman-contribution-graph-dark.svg?game=bomberman&palette=github-dark
-            dist/breakout-contribution-graph.svg?game=breakout
-            dist/breakout-contribution-graph-dark.svg?game=breakout&palette=github-dark
-            dist/puzzle-bobble-contribution-graph.svg?game=puzzle-bobble
-            dist/puzzle-bobble-contribution-graph-dark.svg?game=puzzle-bobble&palette=github-dark
-            dist/galaga-contribution-graph.svg?game=galaga
-            dist/galaga-contribution-graph-dark.svg?game=galaga&palette=github-dark
+      - run: |
+          npm i -g pacman-contribution-graph
+          mkdir -p dist
+          for game in bomberman breakout puzzle-bobble galaga; do
+            pacman-contribution-graph --platform github --username b4631119-oss --game $game --gameTheme github --output dist/$game-contribution-graph.svg || echo "failed $game light"
+            pacman-contribution-graph --platform github --username b4631119-oss --game $game --gameTheme github-dark --output dist/$game-contribution-graph-dark.svg || echo "failed $game dark"
+          done
+          ls -lh dist/
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: pacman-output
@@ -78,8 +81,8 @@ jobs:
     steps:
       - run: |
           mkdir -p dist-stats dist-langs
-          curl -fsSL "https://github-readme-stats.vercel.app/api?username=b4631119-oss&hide_title=true&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" -o dist-stats/stats.svg
-          curl -fsSL "https://github-readme-stats.vercel.app/api/top-langs/?username=b4631119-oss&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" -o dist-langs/languages.svg
+          curl --retry 5 --retry-delay 5 --retry-all-errors -fsSL "https://github-readme-stats.vercel.app/api?username=b4631119-oss&hide_title=true&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" -o dist-stats/stats.svg || echo '<svg><text>stats unavailable</text></svg>' > dist-stats/stats.svg
+          curl --retry 5 --retry-delay 5 --retry-all-errors -fsSL "https://github-readme-stats.vercel.app/api/top-langs/?username=b4631119-oss&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" -o dist-langs/languages.svg || echo '<svg><text>langs unavailable</text></svg>' > dist-langs/languages.svg
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: stats-output
@@ -100,7 +103,7 @@ jobs:
     steps:
       - run: |
           mkdir -p dist
-          curl -fsSL "https://github-profile-trophy.vercel.app/?username=b4631119-oss&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false" -o dist/trophy.svg
+          curl --retry 5 --retry-delay 5 --retry-all-errors -fsSL "https://github-profile-trophy.vercel.app/?username=b4631119-oss&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false" -o dist/trophy.svg || echo '<svg><text>trophy unavailable</text></svg>' > dist/trophy.svg
           cp dist/trophy.svg dist/github-contribution-trophy.svg
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
@@ -116,7 +119,7 @@ jobs:
     steps:
       - run: |
           mkdir -p dist
-          curl -fsSL "https://github-readme-activity-graph.vercel.app/graph?username=b4631119-oss&radius=16&theme=modern-lilac&area=true" -o dist/activity-graph.svg
+          curl --retry 5 --retry-delay 5 --retry-all-errors -fsSL "https://github-readme-activity-graph.vercel.app/graph?username=b4631119-oss&radius=16&theme=modern-lilac&area=true" -o dist/activity-graph.svg || echo '<svg><text>activity unavailable</text></svg>' > dist/activity-graph.svg
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: activity-graph-output
@@ -139,4 +142,5 @@ jobs:
           git config user.email github-actions@github.com
           git add -A .
           git diff --cached --quiet || git commit -m "chore: 3d contrib"
+          git pull --rebase origin main || true
           git push

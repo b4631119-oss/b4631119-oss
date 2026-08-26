@@ -1,5 +1,9 @@
 name: GitHub-Profile-3D-Contrib
 
+concurrency:
+  group: gh-pages-${{ github.ref }}
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: "0 18 * * *"
@@ -23,4 +27,5 @@ jobs:
           git config user.email github-actions@github.com
           git add -A .
           git commit -m "generated 3d contributions"
+          git pull --rebase origin main || true
           git push

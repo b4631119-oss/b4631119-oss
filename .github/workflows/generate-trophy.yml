@@ -1,5 +1,9 @@
 name: Generate Trophy
 
+concurrency:
+  group: gh-pages-${{ github.ref }}
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: "0 4 * * *"
@@ -16,7 +20,7 @@ jobs:
     steps:
       - run: |
           mkdir -p dist
-          curl -fsSL "https://github-profile-trophy.vercel.app/?username=b4631119-oss&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false" -o dist/trophy.svg
+          curl --retry 5 --retry-delay 5 --retry-all-errors -fsSL "https://github-profile-trophy.vercel.app/?username=b4631119-oss&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false" -o dist/trophy.svg || echo '<svg><text>trophy unavailable</text></svg>' > dist/trophy.svg
           cp dist/trophy.svg dist/github-contribution-trophy.svg
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:

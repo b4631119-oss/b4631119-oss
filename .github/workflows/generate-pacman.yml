@@ -1,5 +1,9 @@
 name: Generate Pac-Man
 
+concurrency:
+  group: gh-pages-${{ github.ref }}
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: "0 0 * * *"

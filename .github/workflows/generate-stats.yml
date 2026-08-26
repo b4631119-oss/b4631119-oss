@@ -1,5 +1,9 @@
 name: Generate Stats
 
+concurrency:
+  group: gh-pages-${{ github.ref }}
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: "0 3 * * *"
@@ -16,8 +20,8 @@ jobs:
     steps:
       - run: |
           mkdir -p dist-stats dist-langs
-          curl -fsSL "https://github-readme-stats.vercel.app/api?username=b4631119-oss&hide_title=true&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" -o dist-stats/stats.svg
-          curl -fsSL "https://github-readme-stats.vercel.app/api/top-langs/?username=b4631119-oss&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" -o dist-langs/languages.svg
+          curl --retry 5 --retry-delay 5 --retry-all-errors -fsSL "https://github-readme-stats.vercel.app/api?username=b4631119-oss&hide_title=true&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" -o dist-stats/stats.svg || echo '<svg><text>stats unavailable</text></svg>' > dist-stats/stats.svg
+          curl --retry 5 --retry-delay 5 --retry-all-errors -fsSL "https://github-readme-stats.vercel.app/api/top-langs/?username=b4631119-oss&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" -o dist-langs/languages.svg || echo '<svg><text>langs unavailable</text></svg>' > dist-langs/languages.svg
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: stats-output

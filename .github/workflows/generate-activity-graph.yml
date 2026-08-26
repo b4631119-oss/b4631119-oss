@@ -1,5 +1,9 @@
 name: Generate Activity Graph
 
+concurrency:
+  group: gh-pages-${{ github.ref }}
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: "0 5 * * *"
@@ -16,7 +20,7 @@ jobs:
     steps:
       - run: |
           mkdir -p dist
-          curl -fsSL "https://github-readme-activity-graph.vercel.app/graph?username=b4631119-oss&radius=16&theme=modern-lilac&area=true" -o dist/activity-graph.svg
+          curl --retry 5 --retry-delay 5 --retry-all-errors -fsSL "https://github-readme-activity-graph.vercel.app/graph?username=b4631119-oss&radius=16&theme=modern-lilac&area=true" -o dist/activity-graph.svg || echo '<svg><text>activity unavailable</text></svg>' > dist/activity-graph.svg
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: activity-graph-output
