@@ -91,12 +91,9 @@
 <div align="center">
 
 [![Generate Pac-Man](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-pacman.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-pacman.yml)
-[![Generate Games](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-games.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-games.yml)
 [![Generate Snake](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml)
 [![Generate 3D](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/profile-3d.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/profile-3d.yml)
-[![Generate Stats](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-stats.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-stats.yml)
-[![Generate Trophy](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-trophy.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-trophy.yml)
-[![Generate Activity](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-activity-graph.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-activity-graph.yml)
+[
 
 <br><br>
 
