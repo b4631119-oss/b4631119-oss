@@ -1,0 +1,18 @@
+name: Debug Breakout
+
+on:
+  workflow_dispatch:
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          npm i -g pacman-contribution-graph
+          echo "GITHUB_TOKEN length: ${#GITHUB_TOKEN}"
+          echo "GH_TOKEN length: ${#GH_TOKEN}"
+          pacman-contribution-graph --platform github --username b4631119-oss --game breakout --gameTheme github --scenario full --output /tmp/breakout_debug.svg 2>&1
+          cat /tmp/breakout_debug.svg | grep -E "frames|durationMs"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
