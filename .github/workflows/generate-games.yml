@@ -28,6 +28,7 @@ jobs:
           echo "GITHUB_TOKEN length: ${#GITHUB_TOKEN}"
           echo "GH_TOKEN length: ${#GH_TOKEN}"
           pacman-contribution-graph --platform github --username b4631119-oss --game breakout --gameTheme github --scenario full --output dist/breakout-contribution-graph.svg 2>&1
+          echo "=== Breakout light frames ==="
           cat dist/breakout-contribution-graph.svg | grep -E "frames|durationMs"
           pacman-contribution-graph --platform github --username b4631119-oss --game breakout --gameTheme github-dark --scenario full --output dist/breakout-contribution-graph-dark.svg 2>&1
           cat dist/breakout-contribution-graph-dark.svg | grep -E "frames|durationMs"
@@ -38,14 +39,21 @@ jobs:
           pacman-contribution-graph --platform github --username b4631119-oss --game galaga --gameTheme github --output dist/galaga-contribution-graph.svg
           pacman-contribution-graph --platform github --username b4631119-oss --game galaga --gameTheme github-dark --output dist/galaga-contribution-graph-dark.svg
           ls -lh dist/
+          echo "=== Final verification ==="
           cat dist/breakout-contribution-graph.svg | grep -E "frames|durationMs"
       - name: Push to pacman-output
         run: |
           cd dist
+          echo "=== Files in dist before git add ==="
+          ls -la
+          echo "=== Breakout light frames in dist ==="
+          cat breakout-contribution-graph.svg | grep -E "frames|durationMs"
           git init
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add -A
+          echo "=== Files staged ==="
+          git diff --cached --name-only
           git commit -m "Update game SVGs"
           git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" HEAD:pacman-output
         env:
