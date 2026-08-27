@@ -148,14 +148,20 @@
 
 <br>
 
-<!-- Счётчик просмотров — твой код -->
+<p data-importer="text" align="center"></p>
+
+###
+
+<p data-importer="text" align="center"></p>
+
+###
+
 <div data-importer="profile-views" align="center">
   <img data-importer="profile-views" src="https://visitor-badge.laobi.icu/badge?page_id=b4631119-oss.b4631119-oss&"  />
 </div>
 
-<br>
+###
 
-<!-- Статистика — твой код -->
 <div data-importer="stats" align="center">
   <img src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/stats-output/stats.svg?hide_title=true&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
   <img src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/languages-output/languages.svg?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
@@ -164,4 +170,4 @@
   <img src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/activity-graph-output/activity-graph.svg?radius=16&theme=modern-lilac&area=true&order=5" height="300" alt="activity-graph graph"  />
 </div>
 
-</div>
+###
