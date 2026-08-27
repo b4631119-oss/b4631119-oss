@@ -54,10 +54,15 @@ jobs:
           pacman-contribution-graph --platform github --username b4631119-oss --game galaga --gameTheme github --output dist/galaga-contribution-graph.svg
           pacman-contribution-graph --platform github --username b4631119-oss --game galaga --gameTheme github-dark --output dist/galaga-contribution-graph-dark.svg
           ls -lh dist/
-      - uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: pacman-output
-          build_dir: dist
+      - name: Push to pacman-output
+        run: |
+          cd dist
+          git init
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add -A
+          git commit -m "Update game SVGs"
+          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" HEAD:pacman-output
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
