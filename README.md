@@ -93,7 +93,6 @@
 [![Generate Pac-Man](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-pacman.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-pacman.yml)
 [![Generate Snake](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/generate-snake.yml)
 [![Generate 3D](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/profile-3d.yml/badge.svg)](https://github.com/b4631119-oss/b4631119-oss/actions/workflows/profile-3d.yml)
-[
 
 <br><br>
 
