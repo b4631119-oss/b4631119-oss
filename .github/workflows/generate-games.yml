@@ -25,10 +25,14 @@ jobs:
       - run: npm i -g pacman-contribution-graph
       - run: mkdir -p dist
       - run: |
+          echo "GITHUB_TOKEN length: ${#GITHUB_TOKEN}"
+          echo "GH_TOKEN length: ${#GH_TOKEN}"
+          pacman-contribution-graph --platform github --username b4631119-oss --game breakout --gameTheme github --scenario full --output dist/breakout-contribution-graph.svg 2>&1
+          cat dist/breakout-contribution-graph.svg | grep -E "frames|durationMs"
+          pacman-contribution-graph --platform github --username b4631119-oss --game breakout --gameTheme github-dark --scenario full --output dist/breakout-contribution-graph-dark.svg 2>&1
+          cat dist/breakout-contribution-graph-dark.svg | grep -E "frames|durationMs"
           pacman-contribution-graph --platform github --username b4631119-oss --game bomberman --gameTheme github --output dist/bomberman-contribution-graph.svg
           pacman-contribution-graph --platform github --username b4631119-oss --game bomberman --gameTheme github-dark --output dist/bomberman-contribution-graph-dark.svg
-          pacman-contribution-graph --platform github --username b4631119-oss --game breakout --gameTheme github --scenario full --output dist/breakout-contribution-graph.svg
-          pacman-contribution-graph --platform github --username b4631119-oss --game breakout --gameTheme github-dark --scenario full --output dist/breakout-contribution-graph-dark.svg
           pacman-contribution-graph --platform github --username b4631119-oss --game "puzzle-bobble" --gameTheme github --output dist/puzzle-bobble-contribution-graph.svg
           pacman-contribution-graph --platform github --username b4631119-oss --game "puzzle-bobble" --gameTheme github-dark --output dist/puzzle-bobble-contribution-graph-dark.svg
           pacman-contribution-graph --platform github --username b4631119-oss --game galaga --gameTheme github --output dist/galaga-contribution-graph.svg
