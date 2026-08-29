@@ -2,9 +2,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%2C%20%D1%8F%20%D0%91%D0%B8%D0%BB%D0%BE%D0%BB%21%20%F0%9F%91%8B&fontSize=45&animation=twinkling" />
   <p><i>Frontend Developer</i></p>
 </div>
-
 <img data-importer="image" align="left" height="200" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGd0bjlxZzQ1YWVvdDR1enJsdTB2MXF0djIzamQwem42YTBteGUxaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26tn33aiTi1jkl6H6/giphy.gif" />
-
 <table align="center">
   <tr>
     <td align="center" width="33%"><b>Frontend</b></td>
