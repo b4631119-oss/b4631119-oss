@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320" height="160" viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#1e1e2e" rx="10"/>
+  <style>
+    .title { font: 600 14px 'Segoe UI', sans-serif; fill: #cdd6f4; }
+  </style>
+  <text x="20" y="24" class="title">Most Used Languages</text>
+  <rect x="100" y="22" width="202.59958991865656" height="14" fill="#2b7489" rx="3"/><text x="95" y="34" font="600 11px sans-serif" fill="#cdd6f4" text-anchor="end">TypeScript</text><text x="105+202.59958991865656" y="34" font="500 11px sans-serif" fill="#a6adc8">77.9%</text><rect x="100" y="46" width="35.111320440678085" height="14" fill="#f1e05a" rx="3"/><text x="95" y="58" font="600 11px sans-serif" fill="#cdd6f4" text-anchor="end">JavaScript</text><text x="105+35.111320440678085" y="58" font="500 11px sans-serif" fill="#a6adc8">13.5%</text><rect x="100" y="70" width="13.761947426013606" height="14" fill="#563d7c" rx="3"/><text x="95" y="82" font="600 11px sans-serif" fill="#cdd6f4" text-anchor="end">CSS</text><text x="105+13.761947426013606" y="82" font="500 11px sans-serif" fill="#a6adc8">5.3%</text><rect x="100" y="94" width="5.289836852785047" height="14" fill="#e34c26" rx="3"/><text x="95" y="106" font="600 11px sans-serif" fill="#cdd6f4" text-anchor="end">HTML</text><text x="105+5.289836852785047" y="106" font="500 11px sans-serif" fill="#a6adc8">2.0%</text><rect x="100" y="118" width="4" height="14" fill="#3572A5" rx="3"/><text x="95" y="130" font="600 11px sans-serif" fill="#cdd6f4" text-anchor="end">Python</text><text x="105+4" y="130" font="500 11px sans-serif" fill="#a6adc8">0.8%</text><rect x="100" y="142" width="4" height="14" fill="#89e051" rx="3"/><text x="95" y="154" font="600 11px sans-serif" fill="#cdd6f4" text-anchor="end">Shell</text><text x="105+4" y="154" font="500 11px sans-serif" fill="#a6adc8">0.5%</text>
+</svg>
