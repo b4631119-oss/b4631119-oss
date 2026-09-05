@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect width="100%" height="100%" fill="#1e1e2e" rx="10"/>
+  <style>
+    .title { font: 600 14px 'Segoe UI', sans-serif; fill: #cdd6f4; }
+    .stat { font: 600 28px 'Segoe UI', sans-serif; fill: #f9e2af; }
+    .label { font: 400 12px 'Segoe UI', sans-serif; fill: #a6adc8; }
+    .card { fill: #313244; rx: 8; }
+  </style>
+  <text x="20" y="30" class="title">b4631119-oss's GitHub Stats</text>
+  <g transform="translate(20, 50)">
+    <rect class="card" x="0" y="0" width="145" height="120"/>
+    <text x="10" y="35" class="stat">139</text>
+    <text x="10" y="55" class="label">Total Stars</text>
+    <text x="10" y="85" class="stat">22</text>
+    <text x="10" y="105" class="label">Repositories</text>
+  </g>
+  <g transform="translate(175, 50)">
+    <rect class="card" x="0" y="0" width="145" height="120"/>
+    <text x="10" y="35" class="stat">521</text>
+    <text x="10" y="55" class="label">Commits (year)</text>
+    <text x="10" y="85" class="stat">9</text>
+    <text x="10" y="105" class="label">Pull Requests</text>
+  </g>
+  <g transform="translate(330, 50)">
+    <rect class="card" x="0" y="0" width="145" height="120"/>
+    <text x="10" y="35" class="stat">39</text>
+    <text x="10" y="55" class="label">Followers</text>
+    <text x="10" y="85" class="stat">5</text>
+    <text x="10" y="105" class="label">Following</text>
+  </g>
+</svg>
