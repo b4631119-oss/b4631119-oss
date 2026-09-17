@@ -480,23 +480,8 @@
         font-weight="700"
         letter-spacing="-1"
       >
-        bilol
+        bilolidin
       </text>
-
-      <!-- Last name -->
-
-      <text
-        x="78"
-        y="151"
-        fill="url(#nameGradient)"
-        font-family="Inter, Arial, sans-serif"
-        font-size="43"
-        font-weight="700"
-        letter-spacing="-1"
-      >
-        melibaev
-      </text>
-
       <!-- Shimmer sweep, clipped to the glyph shapes above -->
       <g mask="url(#nameMask)">
         <rect x="0" y="55" width="1200" height="115" fill="url(#shimmerGrad)"/>

@@ -3,6 +3,10 @@
   <p><i>Frontend Developer</i></p>
 </div>
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/main/hello.svg" alt="Hello — bilolidin" width="720" />
+</div>
+
 <img data-importer="image" align="left" height="200" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGd0bjlxZzQ1YWVvdDR1enJsdTB2MXF0djIzamQwem42YTBteGUxaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26tn33aiTi1jkl6H6/giphy.gif" />
 
 <table align="center">
@@ -89,6 +93,6 @@
 </picture>
 
 <br><br>
-<img data-importer="3d" src="profile-3d-contrib/profile-green-animate.svg" alt="3D карту коммитов" width="650"/>
+<img data-importer="3d" src="https://raw.githubusercontent.com/b4631119-oss/b4631119-oss/main/profile-3d-contrib/profile-green-animate.svg" alt="3D карту коммитов" width="650"/>
 
 <br><br>
